@@ -54,7 +54,15 @@ p{
     color: white;
 }
 
+embed{
+    width: 80vw;
+    height: 80vh;
+    max-width: 80vh;
+    max-height: 800vw;
+}
+
 footer p {
     font-size: small;
     color: gray;
+
 }
