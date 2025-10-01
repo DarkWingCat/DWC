@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+}
+
+h1{
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+hr{
+    color: white;
+
+}
+
+nav{
+    color: white;
+    font-size: medium;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 10px;
+}
+
+a{
+    color: #00FF00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+a:hover{
+    color: #AAFFAA;
+}
+
+a:visited{
+    color: #00FF00;
+}
+
+a:visited:hover{
+    color: #AAFFAA;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: white;
+}
+
+footer p {
+    font-size: small;
+    color: gray;
+}

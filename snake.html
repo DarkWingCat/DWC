@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <title>Snake-Web</title>
+    </head>
+    <body>
+        <h1>the DWC bin</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="snake.html">Snake</a></li>
+                <li><a href="brick.html">Brick</a></li>
+            </ul>
+        </nav>
+        <p>You can play Snake here.</p>
+        <<script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            //Below code forces autoplay, no splashscreen and allows sound
+            
+            window.RufflePlayer.config = {
+            "autoplay": "on","splashScreen": false,"unmuteOverlay": "hidden","quality": "medium" };
+            // End custom configuration code above
+            window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("your-file-name.swf");
+            player.style.width = "100%";
+            player.style.height = "100%";
+            });
+            </script>
+            <div id="container"></div>
+        <hr>
+        <footer>
+            <p>Copyright: DarkWingCat 2025</p>
+        </footer>
+    </body>
+</html>
