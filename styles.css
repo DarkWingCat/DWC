@@ -1,14 +1,30 @@
 body {
-    background-color: black;
+    background-color: #001514;
+    /*background-image: url("pattern.png");*/
+    background-size: 50%;
+    background-repeat: repeat;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 2vh;
 }
 
 h1{
-    color: #00FF00;
+    color: #5EEB5E;
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
+}
+
+h2{
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+#logoHead{
+    height: 3em;
+    width: auto;
+    vertical-align: top;
+    float: right;
 }
 
 hr{
@@ -31,27 +47,36 @@ nav ul li{
 }
 
 a{
-    color: #00FF00;
+    color: #5EEB5E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
 }
 
 a:hover{
-    color: #AAFFAA;
+    color: #61FF7E;
 }
 
 a:visited{
-    color: #00FF00;
+    color: #5EEB5E;
 }
 
 a:visited:hover{
-    color: #AAFFAA;
+    color: #61FF7E;
 }
 
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
     color: white;
+}
+
+.card{
+    border: 0.125em;
+    border-style:solid;
+    border-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    backdrop-filter: blur(10px);
 }
 
 embed{

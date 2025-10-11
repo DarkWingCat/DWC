@@ -4,7 +4,9 @@
         <title>DarkWingCat</title>
     </head>
     <body>
-        <h1>the DWC bin</h1>
+        <h1>the DWC bin
+            <img id = "logoHead" src="darkLogo transparent.png" alt="DWC Logo">
+        </h1>
         <hr>
         <nav>
             <ul>
@@ -14,6 +16,39 @@
             </ul>
         </nav>
         <p>Welcome to my little webpage. I will post various projects here. Currently there isn't a lot, but I'm working on it. Currently you can checkout flash versions of the games Snake and Brick, programmed by me using ActionScript 3, FlashDevelop and Ruffle. Some assets have yet to be updated and are currently used as placeholders.</p>
+        <div class="card">
+            <h2>
+                Brick:
+            </h2>
+            <p>
+                I have finished my second Flash game, called Brick. It is more or less a Breakout clone. It works very well, this time even on mobile devices! Using AIR, one could package this as an iOS and Android application, which I might try in the future.
+                <br>Why not try it out? Use the link at the top of the web page to give it a shot! How far can you get? How many screens can you clear?
+                <br>
+                <br>Notes:
+                <br>I am aware, that the collision could use some work. Currently it only flips the vertical momentum. That works for most cases, but if the ball hits a brick from the side, it may clip into it. It could also clip into thing or even go through them, if the speed it too high, which is something I will get around to soon.
+                
+            </p>
+        </div>
+        <br>
+        <div class="card">
+            <h2>
+                Snake:
+            </h2>
+            <p>
+                This technically isn’t my first Flash game, however, it is the first I am happy with. This is just a basic recreation of Snake. Given my current limitations, mostly FlashDevelop, I opted for simple graphics, but with a certain attitude. While FlashDevelop is a powerful tool, it doesn’t have built in support for creating graphics. This led me to using just blocks and shapes. Nevertheless, I still applied various techniques and filters to make it unique.
+                <br>Everything besides the background is drawn programmatically using sprites, shapes and other display objects. Try it out and see how many apples you can eat!
+                <br>
+                <br>Notes:
+                <br>While the game is almost glitch free, currently there is still one bug: The game originally ran too fast. To counteract this, I implemented a delay: It could only process the game loop every 2nd frame. This works well for slowing the game down from 30fps to 15fps, while keeping the menu and inputs smooth, however, it introduces a problem where you can run into yourself: Normally if you try to run into yourself, you can’t- say you’re going up and press down, nothing happens. Given that inputs are processed every frame though and movement only every second, it can happen that you press two buttons too quickly, because you’re basically doing it in-between frames.
+                <br>This happens because the block, that is preventing you from running into yourself via a button press, is tied to a variable that stores where the snake is going, not the input in relation to the snake’s position. This is something I intend to fix.
+
+            </p>
+        </div>
+        <p>
+            Important:
+            <br>
+            While I do my best to create all assets myself, right now there are various sounds not created by me. That includes sounds from Portal (Valve) and Fractal Block World. No copyright infringement is intended. If you are the rightful owner and want this content removed, please contact me. Do note, that currently, the contact page is still under construction.
+        </p>
         <hr>
         <footer>
             <p>Copyright: DarkWingCat 2025</p>
