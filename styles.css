@@ -46,6 +46,10 @@ nav ul li{
     margin-right: 10px;
 }
 
+ul, ol{
+    padding: 0;
+}
+
 a{
     color: #5EEB5E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -117,19 +121,28 @@ footer p {
     }
 
     h2{
-        font-size: 7vh;
+        font-size: 5vh;
     }
 
     p{
-        font-size: 4vh;
+        font-size: 3vh;
+    }
+
+    a{
+        font-size:3vh;
     }
 
     footer p{
         font-size: large;
+    }    
+
+    nav ul li{
+        margin-right: 20px;
     }
 
-    a{
-        font-size:4vh;
+    nav{
+        display: flex;
+        justify-content: center;
     }
 
     #logoHead{
