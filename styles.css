@@ -83,7 +83,10 @@ p{
     border-color: white;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: transparent;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
 }
 
 embed{
