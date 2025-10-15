@@ -16,13 +16,13 @@
 </head>
 
 <body>
-    <h1>the DWC bin
+    <button id="return" onclick="changeStyleIn()">←</button>
+    <button id="forward" onclick="changeStyleOut()">→</button>
+    <h1 id="title">the DWC bin
         <img id="logoHead" src="darkLogo transparent.png" alt="DWC Logo">
     </h1>
     <hr>
     <div class="main">
-        <button id="return" onclick="history.back()">←</button>
-        <button id="forward" onclick="history.forward()">→</button>
         <div class="navbox">
             <nav>
                 <ul>
@@ -42,6 +42,43 @@
     <footer>
         <p>Copyright: DarkWingCat 2025</p>
     </footer>
+
+    <script>
+
+        var nav = document.getElementsByClassName('navbox')[0];
+        var content = document.getElementById('content');
+
+        var navBoxClass = 'navbox';
+        var contentID = 'content';
+
+        if (localStorage.getItem('menuState') === 'in') {
+            nav.removeAttribute('class');
+            content.removeAttribute('id');
+        }
+        else {
+            nav.className = navBoxClass;
+            content.id = contentID;
+        }
+
+        function changeStyleIn() {
+
+
+            nav.removeAttribute('class');
+            content.removeAttribute('id');
+
+
+            localStorage.setItem('menuState', 'in');
+        }
+
+        function changeStyleOut() {
+            nav.className = navBoxClass;
+            content.id = contentID;
+
+            localStorage.setItem('menuState', 'out');
+        }
+
+    </script>
+
 </body>
 
 </html>

@@ -135,13 +135,16 @@ footer p {
         position: relative;
     }
 
+    #title {
+        margin-left: 140px;
+    }
+
     #return {
         width: 50px;
         height: 50px;
 
-        position: absolute;
-        top: 0;
-        margin-left: 20px;
+        float: left;
+        margin-top: 20px;
 
         border-radius: 50%;
         font-size: 40px;
@@ -170,9 +173,10 @@ footer p {
         width: 30px;
         height: 30px;
 
-        position: absolute;
-        top: 10px;
-        margin-left: 75px;
+        float: left;
+
+        margin-left: 10px;
+        margin-top: 30px;
 
         border-radius: 50%;
         font-size: 24px;
@@ -187,9 +191,7 @@ footer p {
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        
-        
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+
         transition: background-color 0.3s, transform 0.2s;
     }
     
@@ -203,7 +205,7 @@ footer p {
         margin-right: 10px;
 
         position: absolute;
-        top: 45px;
+        top: 0;
         bottom: 0;
 
         border-style: solid;
