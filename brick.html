@@ -1,36 +1,47 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <script src="ruffle.js"></script>
-        <script>
-              window.RufflePlayer = {
-              config: {
-              autoplay: "on",         
-              splashScreen: false    
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ruffle.js"></script>
+    <script>
+        window.RufflePlayer = {
+            config: {
+                autoplay: "on",
+                splashScreen: false
             }
-          };
-        </script>
-        <title>Brick-Web</title>
-        <link rel="icon" type="image/x-icon" href="darkLogoLarge.png">
-    </head>
-    <body>
-        <h1>the DWC bin
-            <img id = "logoHead" src="darkLogo transparent.png" alt="DWC Logo">
-        </h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="snake.html">Snake</a></li>
-                <li><a href="brick.html">Brick</a></li>
-            </ul>
-        </nav>
-        <p>You can play Brick here.</p>
-        <embed src="Brick.swf" height="400px" width="400px">
-        <p>You can also download it <a href="EXE/Brick.zip">here.</a></p>
-        <hr>
-        <footer>
-            <p>Copyright: DarkWingCat 2025</p>
-        </footer>
-    </body>
+        };
+    </script>
+    <title>Brick-Web</title>
+    <link rel="icon" type="image/x-icon" href="darkLogoLarge.png">
+</head>
+
+<body>
+    <h1>the DWC bin
+        <img id="logoHead" src="darkLogo transparent.png" alt="DWC Logo">
+    </h1>
+    <hr>
+    <div class="main">
+        <button id="return" onclick="history.back()">←</button>
+        <button id="forward" onclick="history.forward()">→</button>
+        <div class="navbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="snake.html">Snake</a></li>
+                    <li><a href="brick.html">Brick</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="content">
+            <p>You can play Brick here.</p>
+            <embed src="Brick.swf" height="400px" width="400px">
+            <p>You can also download it <a href="EXE/Brick.zip">here.</a></p>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>Copyright: DarkWingCat 2025</p>
+    </footer>
+</body>
+
 </html>
