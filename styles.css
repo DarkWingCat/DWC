@@ -1,0 +1,311 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    background-color: #001514;
+    /*background-image: url("pattern2.png");*/
+    background-image: linear-gradient(-45deg, #001514, #001514 60%, #002220 60%, #002220);
+    background-size: 10px 10px;
+    background-repeat: repeat;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+}
+
+h1 {
+    color: #5EEB5E;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+#logoHead {
+    height: 3em;
+    width: auto;
+    vertical-align: top;
+    float: right;
+}
+
+hr {
+    color: white;
+
+}
+
+nav {
+    color: white;
+    font-size: medium;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+a {
+    color: #5EEB5E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+a:hover {
+    color: #61FF7E;
+}
+
+a:visited {
+    color: #5EEB5E;
+}
+
+a:visited:hover {
+    color: #61FF7E;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+
+    color: white;
+
+    margin-bottom: 6pt;
+    margin-top: 6pt;
+
+    hyphens: auto;
+    word-break: break-word;
+}
+
+p a {
+    font-size: larger;
+}
+
+.card {
+    border: 0.125em;
+    border-style: solid;
+    border-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+embed {
+    width: 80vw;
+    height: 80vh;
+    max-width: 80vh;
+    max-height: 80vw;
+}
+
+footer p {
+    font-size: small;
+    color: gray;
+
+}
+
+@media (orientation: landscape) {
+    ruffle-embed {
+        height: 80%;
+        width: 80vh;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin-top: 2vh;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    #title {
+        margin-left: 140px;
+    }
+
+    #return {
+        width: 50px;
+        height: 50px;
+
+        float: left;
+        margin-top: 20px;
+
+        border-radius: 50%;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+
+        border: none;
+
+        background-color: #5EEB5E;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+        
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    
+    #return:hover {
+        background-color: #218838;
+    }
+
+    #forward {
+        width: 30px;
+        height: 30px;
+
+        float: left;
+
+        margin-left: 10px;
+        margin-top: 30px;
+
+        border-radius: 50%;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+
+        border: none;
+
+        background-color: #5EEB5E;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    
+    #forward:hover {
+        background-color: #218838;
+    }
+
+    .navbox {
+        display: flex;
+        padding: 10px;
+        margin-right: 10px;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        border-style: solid;
+        border-color: white;
+
+        float: left;
+
+        min-width: 100px;
+        max-width: 100px;
+
+        justify-content: center;
+
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    #content {
+        margin-left: 140px;
+    }
+
+    .navbox nav ul {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .navbox nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+}
+
+@media (orientation: portrait) {
+    ruffle-embed {
+        width: 80vw;
+        height: 80vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*Mobile adjustments*/
+
+    body {
+        background-size: 10vw 10vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+        font-size: 8vw;
+    }
+
+    p {
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+
+    .card p {
+        margin-top: 0;
+    }
+
+    a {
+        font-size: 5vw;
+    }
+
+    footer p {
+        font-size: 3vw;
+    }
+
+    nav ul li {
+        margin-right: 5vw;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logoHead {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 3em;
+        height: auto;
+    }
+
+    #return {
+        display: none;
+    }
+
+    #forward {
+        display: none;
+    }
+}
